@@ -1,4 +1,4 @@
-# modal-congratulations
+# modal
 
 ## a palavra é: "teste"
 
