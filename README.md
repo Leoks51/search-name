@@ -2,7 +2,8 @@
 
 ## a palavra é: "teste"
 
-- atualização:
+ Atualizações:
+ =============
  - Background para modal,
  - Script para desabilitar clique fora do modal,
  - Texto inserido no modal através de Script,
