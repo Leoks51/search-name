@@ -19,7 +19,7 @@ body {
     position: absolute;
 }
 
-.input-container input {
+.input-container #btn {
     cursor: pointer;
 }
 
