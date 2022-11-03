@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,26 +10,30 @@
 </head>
 <body>
     <div class="input-container">
-        <div>
-            <input type="text" id="inputTxt">
-            <input type="button" value="Pesquisar" id="btn">
-        </div>
-        <p class="result" style="color:red"></p>
-
+      <div>
+          <input type="text" id="inputTxt">
+          <input type="button" value="Pesquisar" id="btn">
+      </div>
+      <hr/>
+      <!-- retorno de resultado não encontrado em Javascript-->
+      <p class="result" style="color:red"></p>
     </div>
 
-  <div class="modal-container">
-    <div class="modal">
-      <h2 class="modal-title">Parabéns!</h2>
-      <hr/>
-      <span>Este nome foi sorteado!</span>
-      <hr/>
-      <div class="btns">
-        <button class="btnOk" onclick="closeModal()">OK</button>
-        <button class="btnClose" onclick="closeModal()">Fechar</button>
+  <section class="modal-bg">
+    <div class="modal-container">
+      <div class="modal">
+        <h2 class="modal-title">Parabéns!</h2>
+        <hr/>
+        <!-- retorno de resultado dentro do modal em Javascript-->
+        <span class="result-modal"></span>
+        <hr/>
+        <div class="btns">
+          <button class="btnOk" onclick="closeModal()">OK</button>
+          <button class="btnClose" onclick="closeModal()">Fechar</button>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   
   <script src="modal.js"></script>
 </body>
