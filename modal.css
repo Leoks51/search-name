@@ -19,6 +19,10 @@ body {
     position: absolute;
 }
 
+.input-container input {
+    cursor: pointer;
+}
+
 .input-container p {
     position: absolute;
     margin: .1rem;
