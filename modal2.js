@@ -43,17 +43,17 @@ btn.addEventListener('click', () => {
   result.innerHTML = "";
 
   var encontrarAssinante = assinantes.find((selecionado) => {
-    return selecionado.inscricao == input.value;
+    if(selecionado.inscricao == input.value){
+        var sorteado = selecionado.nome;
+    }
+
+    if(sorteado){
+        openModal();
+        result.innerHTML = "";  /*retorno de resultado esperado \/ */
+        spanTxt.innerHTML = `${sorteado} você foi sorteado!`
+      } else {     /*retorno de resultado inesperado \/ */
+        result.innerHTML = `Não encontrei ${sorteado} nesta lista.`;
+      };
 });
-
-let text = input.value;
-
-if(encontrarAssinante){
-  openModal();
-  result.innerHTML = "";  /*retorno de resultado esperado \/ */
-  spanTxt.innerHTML = `${input.value} você foi sorteado!`
-} else {     /*retorno de resultado inesperado \/ */
-  result.innerHTML = `Não encontrei ${input.value} nesta lista.`;
-};
 
 });
