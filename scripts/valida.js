@@ -1,38 +1,5 @@
-var assinantes = [
-    {
-      nome: "Roberto", 
-      inscricao: 121211
-    },
-  
-    {
-      nome: "Adriana", 
-      inscricao: 121212
-    },
-  
-    {
-      nome: "Valdeci", 
-      inscricao: 121214
-    },
-  
-    {
-      nome: "Pedro", 
-      inscricao: 121213
-    }
-];
-
-const modal = document.querySelector('.modal-container')
-const modalBg = document.querySelector('.modal-bg');
-
-function openModal() {
-  modal.classList.add('active');
-  /*para tirar eventos de mouse atrás do modal enquanto tiver ativo*/
-  modalBg.classList.add('modal-bg-active');/*verificar no CSS funcionamento*/
-}
-
-function closeModal() {
-  modal.classList.remove('active');
-  modalBg.classList.remove('modal-bg-active');
-}
+import { assinantes } from "./assinantes.js";
+import { openModal } from "./modal.js";
 
 const input = document.querySelector('#inputTxt');
 const btn = document.querySelector('#btn');
@@ -46,7 +13,7 @@ btn.addEventListener('click', () => {
     if(selecionado.inscricao == input.value){
         var sorteado = selecionado.nome;
     }
-
+    console.log(encontrarAssinante);
     if(sorteado){
         openModal();
         result.innerHTML = "";  /*retorno de resultado esperado \/ */
@@ -56,6 +23,5 @@ btn.addEventListener('click', () => {
     };
       
     return sorteado;
-});
-
+  });
 });
