@@ -14,14 +14,68 @@ body {
     background: #808080;
 }
 
-.input-container {
-    display: block;
+article {
+    width: 50%;
+    height: 50%;
     position: absolute;
 }
 
-.input-container p {
-    position: absolute;
-    margin: .1rem;
+.program-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background: rgb(202, 202, 202);
+    position: relative;
+    border-radius: 10px;
+
+}
+
+.program-container div:nth-child(1) {
+    width: 60%;
+    height: 50%;
+}
+
+.program-container div h2 {
+    text-align: center;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.input-container {
+    background: #e4e4e4;
+    border-radius: 10px;
+    width: 80%;
+    height: 30%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inputTxt {
+    width: 40%;
+    height: 45%;
+}
+
+#inputTxt::selection {
+    border: none;
+}
+
+.btn-seach {
+    margin-inline-start: .1rem;
+    width: 30%;
+    height: 45%;
+    color: #fff;
+    background: rgb(5, 118, 255);
+    border: none;
+}
+
+.btn-seach:hover {
+    background: blue;
+    cursor: pointer;
 }
 
 hr {
@@ -86,6 +140,7 @@ hr {
 
 span {
     margin: 10px auto;
+    text-align: center;
 }
 
 .btns {
