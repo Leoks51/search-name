@@ -2,9 +2,6 @@
 
 ## a palavra é: "teste"
 
- Atualizações:
- =============
- - Background para modal,
- - Script/CSS para desabilitar clique fora do modal enquanto ativo,
- - Texto inserido no modal através de Script,
- - e outras questões de CSS menos visíveis.
+#Busca por nome em uma base de dados
+
+#Nossa base sera apenas um array, mas pode ser usado um arquivo .json
